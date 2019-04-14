@@ -1,0 +1,124 @@
+<!-- Linear layout start here -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical" >
+
+    <!-- Text view for BMI Text -->
+    <TextView
+        android:id="@+id/Head"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="40dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:text="BMI"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp"
+        android:typeface="serif" />
+
+    <!-- Textview for calculator text -->
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calculator"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <!-- Text view for HEIGHT(CM)text -->
+    <TextView
+        android:id="@+id/tvh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="HEIGHT (CM)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <!-- Edit text for entering height with hint in cm -->
+    <EditText
+        android:id="@+id/txt_height"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="IN CM"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center">
+    </EditText>
+
+    <!-- Textview for WEIGHT(KG) text -->
+    <TextView
+        android:id="@+id/tvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="WEIGHT (KG)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <!-- Edit text for entering weight with hint in kgs -->
+    <EditText
+        android:id="@+id/txt_weight"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="IN KGs"
+        android:ems="10"
+        android:fadingEdgeLength="10dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" >
+        <requestFocus />
+    </EditText>
+
+
+
+    <!-- Button for calculating the formula, when pressed, with calculate written over it -->
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="158dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fadingEdge="vertical"
+        android:longClickable="true"
+        android:text="Calculate"
+        android:visibility="visible" />
+
+    <!-- Text view for showing result -->
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your BMI:"
+        android:textStyle="italic"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"/>
+
+</LinearLayout>
+    <!-- Linear layout ends here -->
